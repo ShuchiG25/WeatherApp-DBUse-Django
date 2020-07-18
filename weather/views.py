@@ -11,7 +11,7 @@ from .models import City
 
 def weather(request):
      #  Displaying cities data stored in DB
-    url ="http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=4cd80c1d9a852e8b859c4a09146c78b0"
+    url ="http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=Your API code"
 
     if request.method=='POST':
         form=CityForm(request.POST)
